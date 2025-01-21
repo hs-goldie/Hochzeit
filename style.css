@@ -1,0 +1,266 @@
+/* Einbindung von Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&family=Great+Vibes&family=Lora:wght@400;700&family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Playfair+Display:wght@400;700&family=Quicksand:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* Allgemeine Einstellungen */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+body a {
+    color: #8A9A5B; /* Hover-Farbe für Links */
+}
+
+
+/* Schriftarten für Überschriften */
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: #A3B18A;
+    /* New Sage */
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #A3B18A;
+    /* New Sage */
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+    /* New Sage */
+}
+
+/* Navigation */
+nav {
+    background-color: #A3B18A;
+    /* New Sage */
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Ermöglicht Zeilenumbruch */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Header mit Hintergrundbild */
+.single-image-header {
+    height: 80vh;
+    background: url('Bilder Hochzeit/Festzelt\ Symbolbild.jpg') no-repeat center center/cover;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover; /* Bild skalieren, um den gesamten Container zu füllen */
+    background-position: left bottom; /* Bild zentrieren */
+}
+
+.single-image-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.single-image-header .text-overlay {
+    position: relative;
+    z-index: 2;
+    color: #A3B18A;
+    font-weight: bolder;
+}
+
+/* Footer */
+footer {
+    background-color: #A3B18A; /* Gleiche Hintergrundfarbe wie die Navigation */
+    color: white; /* Gleiche Textfarbe wie die Navigation */
+    text-align: center; /* Text zentrieren */
+    padding: 20px 0; /* Padding oben und unten */
+    margin-top: 40px; /* Abstand zum vorherigen Inhalt */
+}
+
+footer p {
+    margin: 5px 0; /* Abstand zwischen den Absätzen */
+}
+
+/* Abschnitt mit Bild und Text */
+.section-header {
+    position: relative;
+    height: 60vh;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.section-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.section-header .text-overlay {
+    position: relative;
+    z-index: 2;
+}
+
+/*Bilder einfügen */
+.add-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Abschnitte */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Programm */
+/* Allgemeine Stile */
+#programm {
+
+    .day {
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Farben für die einzelnen Tage */
+    .friday {
+        background-color: #A3B18A;
+        /* New Sage */
+        color: #000000;
+        /* Black */
+    }
+
+    .saturday {
+        background-color: #F4C2C2;
+        /* New Apricot */
+        color: #000000;
+        /* Black */
+    }
+
+    .sunday {
+        background-color: #A3B18A;
+        /* New Sage */
+        color: #000000;
+        /* Black */
+    }
+
+    /* Stile für Listen */
+    .day ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .day li {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .day li .icon {
+        margin-right: 10px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .day li strong {
+        margin-right: 30px;
+        /* Add space between time and program point */
+    }
+
+
+    /* Übernachtung */
+
+    /* Formular */
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    form button {
+        background-color: #A3B18A;
+        /* New Sage */
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        background-color: #8B9A72;
+        /* Darker Sage */
+    }
+
+    /* RSVP iframe */
+    .rsvp-iframe {
+        width: 100%;
+        height: 800px;
+        /* Behalte die Höhe bei oder passe sie nach Bedarf an */
+        border: none;
+        /* Entferne den Rahmen */
+    }
+
